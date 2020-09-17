@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+	<title>Rahul Studio</title>
+</head>
+<body>
+	<!-- Navigation Bar-->
+	<nav>
+		 <div id="home">
+		 	<a href="#landing">Home</a>
+		 </div>
+		 <div id="menu">
+		 	<a href="#portfolio">Portfolio</a>
+		 	<a href="#about">About Us</a>
+		 	<a href="#contact">Contact</a>
+		 </div>
+	</nav>
+
+	<main>
+		<!-- Landing Area : Our main content will be starting here -->
+
+		<div id="landing">
+			<div id="landing-text">
+				<div id="landing-text-inner">
+					<h1>Rahul Studios</h1>
+					<h2>Beautiful Creative Photography</h2>
+					<a href="#portfolio" class="btn" id="view-work">Portfolio</a>
+					<a href="#payments" class="btn" id="view-work">Buy Images at $10 each!</a>
+				</div>
+			</div>
+			<div id="landing-image"></div>
+		</div>
+
+
+		<!-- Portfolio-->
+		<div id="portfolio">
+			<div class="header">
+				<h2>Our Work</h2>
+			</div>
+
+			<div id="photo-container">
+
+				<div class="photo">
+					<a href="Assets/photo1.jpeg"><img src="Assets/photo1.jpeg"></a>
+					<div class="caption">
+						<h3>The Elephant</h3>
+						<p>This picture depicts rare image of the Kerala White Elephants</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo2.jpeg"><img src="Assets/photo2.jpeg"></a>
+					<div class="caption">
+						<h3>Blossom the Pink</h3>
+						<p>Usually seem on the mountain tops</p>
+					</div>
+				</div>
+
+
+				<div class="photo">
+					<a href="Assets/photo3.jpeg"><img src="Assets/photo3.jpeg"></a>
+					<div class="caption">
+						<h3>Coniferous Forest</h3>
+						<p>The fish eye lense view of the Alaska Forest</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo4.jpeg"><img src="Assets/photo4.jpeg"></a>
+					<div class="caption">
+						<h3>The Pure</h3>
+						<p>White water of Himalayas</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo5.jpeg"><img src="Assets/photo5.jpeg"></a>
+					<div class="caption">
+						<h3>The Great Sky Reef</h3>
+						<p>Cold winds of Poland</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo6.jpeg"><img src="Assets/photo6.jpeg"></a>
+					<div class="caption">
+						<h3>Journey to Etna</h3>
+						<p>Chilly winds and scary chunks of Itlay</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo7.jpeg"><img src="Assets/photo7.jpeg"></a>
+					<div class="caption">
+						<h3>The Mirana Trench</h3>
+						<p>To the deepest of Ocean</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo8.jpeg"><img src="Assets/photo8.jpeg"></a>
+					<div class="caption">
+						<h3>The Atlantis</h3>
+						<p>Dive in to the kingdom of Poseidon</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo9.jpeg"><img src="Assets/photo9.jpeg"></a>
+					<div class="caption">
+						<h3>Black Panther</h3>
+						<p>Story of Bagheera</p>
+					</div>
+				</div>
+
+				<div class="photo">
+					<a href="Assets/photo10.jpeg"><img src="Assets/photo10.jpeg"></a>
+					<div class="caption">
+						<h3>Black Lion</h3>
+						<p>Species in China</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<!-- About Section -->
+		<div id="about">
+			<div class="header">
+				<h2>About Us</h2>
+			</div>
+			<div id="profilepic">
+				<div id="profileimg">
+					<img src="Assets/profile.jpg">
+				</div>
+				<div class="caption">
+					<h3>Photographer</h3>
+					<p>Rahul Tandon<br>Winner of 1st World Photography Event<br>organised by Alan Turing Children Welfare</p>
+				</div>
+			</div>	
+		</div>
+
+
+		<!-- Payments -->
+		<div id="payments">
+			<h2>Payments</h2>
+			<div id="payments-inner">
+			</div>
+	    </div>
+
+	</main>
+
+	<!-- Footer -->
+
+
+	<footer id="contact">
+		<h3>Get In Touch</h3>
+		<p>Email or call us to connect:</p>
+		<p>Email: <strong>rayrahul.rt@gmail.com</strong></p>
+		<p>Phone: <strong>+91 8130104223</strong></p>
+		<div id="social-media">
+			<a href="https://www.facebook.com/rahul.tandon.902" target="#_parent"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/ruderaymond17" target="#_parent"><i class="fab fa-twitter"></i></a>
+			<a href="https://www.instagram.com/rahul.tandon97/" target="#_parent"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+
+
+</body>
+				
+				<script>paypal.Buttons().render('#payments-inner')</script>
+</html>
